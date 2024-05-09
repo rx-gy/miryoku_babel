@@ -179,16 +179,6 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 **** Alphas
 
 
-***** RECURVA
-
-~MIRYOKU_ALPHAS=RECURVA~
-
-#+NAME: recurva
-| F    | R    | D    | P    | V    | Q    | J    | U    | O    | Y    |
-| S    | N    | T    | C    | B    | DOT  | H    | E    | A    | I    |
-| Z    | X    | K    | G    | W    | M    | L    | ;    | '    | ,    |
-
-
 ***** AZERTY
 
 ~MIRYOKU_ALPHAS=AZERTY~
@@ -197,6 +187,16 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | A    | Z    | E    | R    | T    | Y    | U    | I    | O    | P    |
 | Q    | S    | D    | F    | G    | H    | J    | K    | L    | M    |
 | W    | X    | C    | V    | B    | N    | ,    | DOT  | /    | '    |
+
+
+***** RECURVA
+
+~MIRYOKU_ALPHAS=RECURVA~
+
+#+NAME: recurva
+| F    | R    | D    | P    | V    | Q    | J    | U    | O    | Y    |
+| S    | N    | T    | C    | B    | DOT  | H    | E    | A    | I    |
+| Z    | X    | K    | G    | W    | M    | L    | ;    | '    | ,    |
 
 
 ***** BEAKL-15
@@ -1745,6 +1745,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY \
 <<table-layer-taphold(alphas_table=azerty)>>
 
+#define MIRYOKU_ALTERNATIVES_BASE_RECURVA \
+<<table-layer-taphold(alphas_table=recurva)>>
+
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15 \
 <<table-layer-taphold(alphas_table=beakl15)>>
 
@@ -1805,6 +1808,9 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_TAP_AZERTY \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=azerty, thumbs_table=thumbs)>>
+
+#define MIRYOKU_ALTERNATIVES_TAP_RECURVA \
+<<table-layer-full(current_layer_name="U_TAP", alphas_table=recurva, thumbs_table=thumbs)>>
 
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15 \
 <<table-layer-full(current_layer_name="U_TAP", alphas_table=beakl15, thumbs_table=thumbs)>>
