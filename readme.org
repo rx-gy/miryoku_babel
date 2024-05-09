@@ -179,6 +179,16 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 **** Alphas
 
 
+***** RECURVA
+
+~MIRYOKU_ALPHAS=RECURVA~
+
+#+NAME: recurva
+| F    | R    | D    | P    | V    | Q    | J    | U    | O    | Y    |
+| S    | N    | T    | C    | B    | DOT  | H    | E    | A    | I    |
+| Z    | X    | K    | G    | W    | M    | L    | ;    | '    | ,    |
+
+
 ***** AZERTY
 
 ~MIRYOKU_ALPHAS=AZERTY~
